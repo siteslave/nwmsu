@@ -177,7 +177,7 @@ $(function () {
         if (lat && lng) {
             var latLng = new google.maps.LatLng(lat, lng);
             addMarker(latLng);
-            map.setCenter({lat: lat, lng: lng});
+            map.setCenter(latLng);
         }
     });
 
