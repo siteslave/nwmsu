@@ -70,17 +70,17 @@ $(function () {
                 i++;
 
                 var html = [
-                    '<tr>' +
-                    '<td>'+ i +'</td>' +
-                    '<td>'+ v.address +'</td>' +
-                    '<td>'+ v.census_id +'</td>' +
-                    '<td>'+ v.latitude +'</td>' +
-                    '<td>'+ v.longitude +'</td>' +
-                    '<td><button class="btn btn-primary" ' +
-                    'data-lat="'+ v.latitude + '" data-lng="'+ v.longitude +'" ' +
-                    'data-name="btnSetMap" data-id="'+ v.house_id + '">' +
-                    '<span class="fa fa-map-marker"></span>' +
-                    '</button></td>' +
+                    '<tr>',
+                    '<td>'+ i +'</td>',
+                    '<td>'+ v.address +'</td>',
+                    '<td>'+ v.census_id +'</td>',
+                    '<td>'+ v.latitude +'</td>',
+                    '<td>'+ v.longitude +'</td>',
+                    '<td><button class="btn btn-primary" ',
+                    'data-lat="'+ v.latitude + '" data-lng="'+ v.longitude +'" ',
+                    'data-name="btnSetMap" data-id="'+ v.house_id + '">',
+                    '<span class="fa fa-map-marker"></span>',
+                    '</button></td>',
                     '</tr>'
                 ].join('');
 
@@ -113,7 +113,6 @@ $(function () {
                 cb(err);
             })
     };
-
 
     $(document).on('click', 'button[data-name="btnGetHouse"]', function (e) {
         e.preventDefault();

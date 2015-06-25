@@ -12,8 +12,7 @@ $(function () {
         e.preventDefault();
 
         $('#txtStatus').val(1);
-
-        $('#mdlNew').modal({ backdrop: 'static' })
+        $('#mdlNew').modal({ backdrop: 'static' });
 
     });
 
@@ -25,7 +24,7 @@ $(function () {
             if (err) console.log(err);
             else users.setList(rows);
         });
-    })
+    });
 
     // Edit
     $(document).on('click', 'button[data-name="btnEdit"]', function (e) {
@@ -52,7 +51,7 @@ $(function () {
                         else users.setList(rows);
                     });
                 }
-            })
+            });
         }
     });
 
@@ -75,7 +74,7 @@ $(function () {
 
     // modal hide
     $('#mdlNew').on('hidden.bs.modal', function (e) {
-        $('#txtUsername').val('').prop('disabled', false);;
+        $('#txtUsername').val('').prop('disabled', false);
         $('#txtPassword').val('');
         $('#txtStatus').val(0);
     });
